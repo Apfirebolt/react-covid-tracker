@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+  Covid 19 Update App in React
+</h3>
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+- **Made in React.** A progressive modern front-end Javascript framework to build blazing fast SPA applications.
 
-### `npm start`
+- **Covid 19 API.** Uses API from this website https://covid19api.com/, might have a rate limit but no key is required to access the end-point at the time of writing this.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Material UI** It makes use of React Material components for form and card elements used in the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Development Setup
 
-### `npm test`
+Please install node modules through npm install command, contains separate front-end and back-end sections.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm install
 
-### `npm run build`
+// For making a build and deploying for production
+npm run build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+// For development
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future improvements
 
-### `npm run eject`
+- Little to no scope of including anything else in this project as it is a simple API integration based application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Might add deployment scripts to deploy on Heroku, Netlify and through Docker on personal server.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+There isn't a lot of scope of adding screenshots for this project as it only contains a single page. First part of the homepage is depicted below which shows country specific Covid data.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![alt text](./screenshots/covid1.png)
 
-## Learn More
+Second part of the first page which shows how Global data is displayed which is basically similar to how country data is shown.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![alt text](./screenshots/covid2.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+List of countries to choose from the dropdown
 
-### Code Splitting
+![alt text](./screenshots/covid-list.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Estimated Completion Time
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is expected to be completed in around 4 hours. Most of the time was spent of flexing the UI until I was satisfied :)
