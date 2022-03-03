@@ -1,17 +1,18 @@
-import logo from './logo.svg';
-import Button from "@mui/material/Button";
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HomePage from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button variant="text">Text</Button>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} exact />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
