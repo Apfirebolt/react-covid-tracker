@@ -1,24 +1,30 @@
 import React from "react";
 
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
 
-
-const CountrySelector = () => {
+const CountrySelector = (props) => {
   return (
     <Container maxWidth="lg">
-      <Box sx={{ bgcolor: "#cfe8fc", height: "auto", padding: "1rem" }}>
-        <Card sx={{ maxWidth: '100%' }}>
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Covid 19 Country Selector
-            </Typography>
-          </CardContent>
-        </Card>
-      </Box>
+      <FormControl fullWidth sx={{ margin: '1.5rem auto' }}>
+        <InputLabel id="select-country-label">Select Country</InputLabel>
+        <Select
+          labelId="select-country-label"
+          id="select-country-select"
+          label="Please Select the Country"
+          defaultValue=""
+          onChange={(e) => props.selectCountry(e.target.value)}
+        >
+          {props.countries.map((country) => (
+            <MenuItem key={country.Country} value={country.Country}>
+              {country.Country}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
     </Container>
   );
 };

@@ -5,11 +5,10 @@ import Typography from "@mui/material/Typography";
 
 const FooterContainer = styled.div`
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   padding: 0.5rem;
-  width: 100% !important;
-  height: 100px !important ;
+  width: 100%;
   background: #6cf;
 `;
 

@@ -4,8 +4,8 @@ import CircularProgress from "@mui/material/CircularProgress";
 
 const LoaderComponent = () => {
   return (
-    <Container maxWidth="lg">
-      <CircularProgress color="inherit" />
+    <Container sx={{ display: "flex", justifyContent: "center", margin: "1rem auto" }}>
+      <CircularProgress />
     </Container>
   );
 };
