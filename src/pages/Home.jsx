@@ -12,7 +12,6 @@ import InfoContainer from "../components/InfoContainer";
 import covidService from "../services/covidService";
 
 const HomePage = () => {
-  const [loading, setLoading] = useState(false);
   const [countries, setCountries] = useState([]);
   const [dataDate, setDataDate] = useState("");
   const [status, setStatus] = useState({});
@@ -25,12 +24,10 @@ const HomePage = () => {
 
   useEffect(() => {
     async function getCovidData() {
-      setLoading(true);
       const response = await covidService();
       setCountries(response.Countries);
       setDataDate(response.Date);
       setStatus(response.Global);
-      setLoading(false);
     }
     getCovidData();
   }, []);
@@ -41,7 +38,7 @@ const HomePage = () => {
         <Card sx={{ maxWidth: "100%" }}>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Covid 19 API
+              Get Global and Country specific latest Covid stats
             </Typography>
             <CountrySelector countries={countries} selectCountry={selectCountry} />
             <InfoContainer country={countryData} status={status} />

@@ -2,15 +2,13 @@ import React from "react";
 
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 const HeaderComponent = () => {
   return (
     <Container maxWidth="lg">
-      <Box sx={{ bgcolor: "#cfe8fc", height: "auto", padding: "1rem" }}>
-        <Typography gutterBottom variant="h5" component="div">
+      <Box sx={{ bgcolor: "#793A2D", textAlign: "center", height: "auto", padding: "1rem" }}>
+        <Typography gutterBottom variant="h5" color="white" component="div">
           Covid 19 Latest Data
         </Typography>
       </Box>
